@@ -58,14 +58,13 @@
 }
 
 .product-items .product-name {
-    max-width: 80%;
     text-align: left;
 }
 
 .product-image {
-    max-width: 50%;
-    height: auto;
-    display: block;
+    width: 200px;
+    height: 200px;
+    /*  */
 }
 
 .product-name {
