@@ -15,6 +15,7 @@ function getData() {
       data.forEach((item) => {
         const product = document.createElement("div");
         product.className = "product-container";
+        body.appendChild(product);
         const productContent = document.createElement("div");
         productContent.className = "content";
         product.appendChild(productContent);
@@ -35,8 +36,6 @@ function getData() {
         productDescription.className = "product-description";
         productDescription.textContent = item.description;
         productContent.appendChild(productDescription);
-
-        body.append(product);
       });
     });
 }
