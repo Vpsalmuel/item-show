@@ -1,9 +1,10 @@
-body = document.body;
+const body = document.body;
 // const prodImg = document.querySelector(".product-image");
 // const prodName = document.querySelector(".product-name");
 // // const prodID = document.querySelector(".first-content");
 // const prodPrice = document.querySelector(".product-price");
 // const prodDesc = document.querySelector(".product-description");
+const product = document.createElement("div");
 
 function getData() {
   fetch("https://fakestoreapi.com/products")
@@ -13,9 +14,6 @@ function getData() {
     .then((data) => {
       console.log(data);
       data.forEach((item) => {
-        const product = document.createElement("div");
-        product.className = "product-container";
-        body.appendChild(product);
         const productContent = document.createElement("div");
         productContent.className = "content";
         product.appendChild(productContent);
@@ -30,7 +28,7 @@ function getData() {
 
         const productPrice = document.createElement("p");
         productPrice.className = "product-price";
-        productPrice.textContent = item.price;
+        productPrice.textContent = "$" + item.price;
         productContent.appendChild(productPrice);
         const productDescription = document.createElement("p");
         productDescription.className = "product-description";
@@ -40,4 +38,6 @@ function getData() {
     });
 }
 
+product.className = "product-container";
+body.appendChild(product);
 getData();
