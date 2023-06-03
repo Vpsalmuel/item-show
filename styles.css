@@ -33,7 +33,7 @@
 
 .navigation a:first-child {
     text-decoration: none;
-    color: rgb(240, 8, 8);
+    color: rgb(219, 250, 204);
     font-size: 20px;
     font-weight: bold;
     margin-right: 20px;
@@ -78,8 +78,8 @@
 }
 
 .product-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     /*  */
 }
 
