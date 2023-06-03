@@ -48,16 +48,16 @@
     gap: 2rem;
     height: 100%;
     flex-wrap: wrap;
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.144);
     padding: 20px 30px;
 }
 
 .product-container .content {
     width: 300px;
-    border: 1px solid black;
+    outline: 1px solid black;
     border-radius: 5px;
     padding: 10px 20px;
     text-align: center;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.144);
 }
 
 .product-items {
